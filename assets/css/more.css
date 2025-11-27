@@ -38,12 +38,12 @@
     border: 3px solid transparent;
     border-radius: 2px;
     transform: rotate(45deg);
-    border-color: transparent #447fff #447fff transparent;
+    border-color: transparent #e8a87c #e8a87c transparent;
     opacity: 1;
     transition: opacity 0.1s ease;
   }
   .accordion-item__label:hover {
-    background: #d3e1ff;
+    background: #f4d4c0;
   }
   .accordion-item__container {
       width: auto;
@@ -54,7 +54,7 @@
     transition: padding 0.2s ease, opacity 0.5s 0.15s ease;
   }
   .accordion-active {
-    background: rgba(68, 127, 255, 0.1);
+    background: rgba(232, 168, 124, 0.1);
   }
   .accordion-active .accordion-item__label {
     padding-bottom: 0;
@@ -81,10 +81,10 @@
   @media (min-width: 600px) {
     .accordion-tabs {
       display: flex;
-      background: rgba(68, 127, 255, 0.1);
+      background: rgba(232, 168, 124, 0.1);
     }
     .accordion-tabs .accordion-tab {
-      background: rgba(68, 127, 255, 0.1);
+      background: rgba(232, 168, 124, 0.1);
       padding: 1rem 2rem;
       font: inherit;
       flex: 1;
@@ -148,7 +148,7 @@
   
   body {
     font-family: "Open Sans", sans-serif;
-    background: #3b70fc;
+    background: linear-gradient(135deg, #e8a87c, #d4845f);
     display: flex;
     flex-direction: column;
     font-size: 1rem;

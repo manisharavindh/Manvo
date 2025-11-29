@@ -1400,6 +1400,155 @@ section {
 
 
 /* ============================================================
+   ORDER MODAL STYLING
+   ============================================================ */
+
+.order-modal {
+  background: var(--bg-color-sec);
+  border-radius: 8px;
+  border: 2px solid var(--accent-color-pri);
+  box-shadow: 0 10px 50px rgba(232, 168, 124, 0.3);
+}
+
+.order-modal-header {
+  background: var(--gradient-accent);
+  border-bottom: 2px solid var(--accent-color-sec);
+  border-radius: 6px 6px 0 0;
+  padding: 25px 30px;
+}
+
+.order-modal-header .modal-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--bg-color);
+  letter-spacing: 0.5px;
+  font-family: "Poppins", sans-serif;
+}
+
+.order-btn-close {
+  filter: brightness(0) invert(1);
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+
+.order-btn-close:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.order-modal-body {
+  padding: 35px 30px;
+}
+
+.order-info-text {
+  color: var(--text-color-sec);
+  font-size: 14px;
+  margin-bottom: 25px;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.order-form-input,
+.order-form-select {
+  border: 1.5px solid var(--accent-color-sec) !important;
+  border-radius: 4px;
+  background-color: var(--bg-color) !important;
+  color: var(--text-color-pri) !important;
+  font-size: 14px;
+  padding: 10px 15px;
+  transition: all 0.3s ease;
+  font-family: "Open Sans", sans-serif;
+}
+
+.order-form-input:focus,
+.order-form-select:focus {
+  border-color: var(--accent-color-pri) !important;
+  box-shadow: 0 0 10px rgba(232, 168, 124, 0.25) !important;
+  background-color: var(--bg-color) !important;
+  color: var(--text-color-pri) !important;
+  outline: none !important;
+}
+
+.order-form-input::placeholder {
+  color: var(--text-color-ter);
+}
+
+.order-form-select option {
+  background-color: var(--bg-color);
+  color: var(--text-color-pri);
+  padding: 10px;
+}
+
+.order-form-select option:checked {
+  background: linear-gradient(var(--accent-color-pri), var(--accent-color-pri));
+  background-color: var(--accent-color-pri) !important;
+  color: var(--bg-color);
+}
+
+.order-btn-submit {
+  background: var(--gradient-accent);
+  color: var(--bg-color);
+  border: none;
+  padding: 12px 40px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(232, 168, 124, 0.25);
+  font-family: "Poppins", sans-serif;
+}
+
+.order-btn-submit:hover {
+  background: var(--gradient-accent-alt);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(244, 184, 150, 0.4);
+}
+
+.order-btn-submit:active {
+  transform: translateY(0);
+}
+
+/* Modal Backdrop */
+.modal-backdrop {
+  background-color: rgba(90, 74, 66, 0.5);
+}
+
+/* Modal Dialog Animation */
+.modal.fade .modal-dialog {
+  transition: all 0.3s ease;
+}
+
+.modal.show .modal-dialog {
+  transform: scale(1);
+}
+
+@media (max-width: 576px) {
+  .order-modal-body {
+    padding: 25px 20px;
+  }
+
+  .order-modal-header {
+    padding: 20px;
+  }
+
+  .order-modal-header .modal-title {
+    font-size: 18px;
+  }
+
+  .order-btn-submit {
+    width: 100%;
+    padding: 10px 20px;
+  }
+}
+
+
+
+
+
+/* ============================================================
    FOOTER
    ============================================================ */
 

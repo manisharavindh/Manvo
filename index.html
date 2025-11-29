@@ -74,7 +74,7 @@
                                 <li data-filter=".filter-code">Codes</li>
                                 <li data-filter=".filter-game">Games</li>
                                 <li data-filter=".filter-temp">Pages</li>
-                                <a href="projects.html" target="_blank" class="more-btn">More</a>
+                                <a href="components/projects.html" target="_blank" class="more-btn">More</a>
                             </ul>
                         </div>
                     </div>
@@ -205,7 +205,7 @@
                     <div class="row no-gutters" data-aos="fade-up">
                         <div class="col-lg-4 box">
                             <h3>Standard</h3>
-                            <h4>$50<span>/month</span></h4>
+                            <h4>$19<span>/month</span></h4>
                             <ul>
                                 <li><i class="bx bx-check-circle"></i>Free To Play</li>
                                 <li><i class="bx bx-check-circle"></i>Source Code</li>
@@ -216,7 +216,7 @@
                         </div>
                         <div class="col-lg-4 box featured">
                             <h3>Business</h3>
-                            <h4>$250<span>/month</span></h4>
+                            <h4>$39<span>/month</span></h4>
                             <ul>
                                 <li><i class="bx bx-check-circle"></i>Free To Play</li>
                                 <li><i class="bx bx-check-circle"></i>Full Source Code</li>
@@ -228,7 +228,7 @@
                         </div>
                         <div class="col-lg-4 box">
                             <h3>Developer</h3>
-                            <h4>$150<span>/month</span></h4>
+                            <h4>$29<span>/month</span></h4>
                             <ul>
                                 <li><i class="bx bx-check-circle"></i>Free To Play</li>
                                 <li><i class="bx bx-check-circle"></i>Full Source Code</li>
@@ -241,31 +241,31 @@
                 </div>
                 <!-- order model -->
                 <div id="buy-ticket-modal" class="modal fade">
-                    <div class="modal-dialog" role="document" style="border: 2.5px solid; border-radius: 5px;">
-                        <div class="modal-content">
-                            <div class="modal-header">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content order-modal">
+                            <div class="modal-header order-modal-header">
                                 <h4 class="modal-title">Select Your Plan</h4>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                <button type="button" class="btn-close order-btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
-                            <div class="modal-body">
-                                <p>More Information Will Be Send To Your Email ID By Formspree</p>
+                            <div class="modal-body order-modal-body">
+                                <p class="order-info-text">More Information Will Be Send To Your Email ID By Formspree</p>
                                 <form method="post" action="https://formspree.io/f/xknyvknz">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" name="Name" placeholder="Your Name" required style="border: 1.5px solid #106eea;">
+                                        <input type="text" class="form-control order-form-input" name="Name" placeholder="Your Name" required>
                                     </div>
                                     <div class="form-group mt-3">
-                                        <input type="email" class="form-control" name="Email" placeholder="Your Email" required style="border: 1.5px solid #106eea;">
+                                        <input type="email" class="form-control order-form-input" name="Email" placeholder="Your Email" required>
                                     </div>
                                     <div class="form-group mt-3">
-                                        <select id="ticket-type" name="Plan-Type" class="form-select" name="Message" style="border: 1.5px solid #106eea;">
+                                        <select id="ticket-type" name="Plan-Type" class="form-select order-form-select" required>
                                             <option value="">-- Select Your Plan --</option>
                                             <option value="Standard">Standard</option>
                                             <option value="Business">Business</option>
                                             <option value="Developer">Developer</option>
                                         </select>
                                     </div>
-                                    <div class="text-center mt-3">
-                                        <button type="submit" class="btn  btn-buy">Buy Now</button>
+                                    <div class="text-center mt-4">
+                                        <button type="submit" class="btn order-btn-submit">Buy Now</button>
                                     </div>
                                 </form>
                             </div>

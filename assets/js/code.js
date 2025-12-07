@@ -11,12 +11,10 @@ window.onload = function () {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MEmpire Code</title>
+    <title>Manvo Code</title>
 </head>
 <body>
-    <h1 id="h1"></h1>
-    <h3 id="h2"></h3>
-    <h4 id="h3"></h4>
+    <p id="msg"></p>
 </body>
 </html>`);
     else htmlEditor.session.setValue(localStorage.getItem("lc-codepen-clone-html"))
@@ -34,17 +32,21 @@ window.onload = function () {
 
     if (localStorage.getItem("lc-codepen-clone-css") == null)
         cssEditor.session.setValue(`body{
-    font-family: 'Roboto', sans-serif;
-    margin-top: 310px;
-    text-align: center;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    color: #5a4a42;
+    background-color: #f5ede5;
+    font-family: "Open Sans", sans-serif;
 }
-#h1{
-    font-size: 50px;
-    text-decoration: underline;
+
+#msg{
+    font-size: 2.5rem;
+    font-weight: 900;
 } 
-span{
-    color: #106eea;
-    text-shadow: 0px 0px 5px #106eea;
+
+#msg span{
+    color: #e8a87c;
 }`);
     else cssEditor.session.setValue(localStorage.getItem("lc-codepen-clone-css"))
     cssEditor.session.setUseWrapMode(true);
@@ -58,13 +60,9 @@ span{
     jsEditor.session.setMode("ace/mode/javascript");
     jsEditor.setTheme("ace/theme/nord_dark");
     if (localStorage.getItem("lc-codepen-clone-js") == null)
-        jsEditor.session.setValue(`var head = document.getElementById('h1');
-var mid = document.getElementById('h2');
-var end = document.getElementById('h3');
+        jsEditor.session.setValue(`var h1 = document.getElementById('msg');
 
-head.innerHTML = 'Welcome To <span>MEmpire</span> Code';
-mid.innerHTML = 'MEmpire code is a fully functional online code editor for beginners';
-end.innerHTML = '*This online code editor is made by Manish Aravindh CEO of MEmpire*';`);
+h1.innerHTML = 'Welcome To <span>Manvo</span> Code';`);
     else
         jsEditor.session.setValue(localStorage.getItem("lc-codepen-clone-js"))
     jsEditor.session.setUseWrapMode(true);
